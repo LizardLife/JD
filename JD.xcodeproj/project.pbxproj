@@ -55,6 +55,7 @@
 		114F2AC11C5200BB006363C6 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 114F2AB21C5200BB006363C6 /* UIScrollView+MJRefresh.m */; settings = {ASSET_TAGS = (); }; };
 		114F2AC21C5200BB006363C6 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 114F2AB41C5200BB006363C6 /* UIView+MJExtension.m */; settings = {ASSET_TAGS = (); }; };
 		114F2AC31C5200BB006363C6 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 114F2AB51C5200BB006363C6 /* README.md */; settings = {ASSET_TAGS = (); }; };
+		11544FAA1C561BF6001B68DF /* RCDraggableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 11544FA91C561BF6001B68DF /* RCDraggableButton.m */; settings = {ASSET_TAGS = (); }; };
 		11E631491C50E25F00B912ED /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E631481C50E25F00B912ED /* MBProgressHUD+MJ.m */; settings = {ASSET_TAGS = (); }; };
 		11E6314C1C50E27700B912ED /* MasonyUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E6314B1C50E27700B912ED /* MasonyUtil.m */; settings = {ASSET_TAGS = (); }; };
 		CDEF0989E5A3190BE6E4D46D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B6AD74842871481BD3F219 /* libPods.a */; };
@@ -175,6 +176,8 @@
 		114F2AB31C5200BB006363C6 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		114F2AB41C5200BB006363C6 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
 		114F2AB51C5200BB006363C6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		11544FA81C561BF6001B68DF /* RCDraggableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCDraggableButton.h; sourceTree = "<group>"; };
+		11544FA91C561BF6001B68DF /* RCDraggableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCDraggableButton.m; sourceTree = "<group>"; };
 		11E631471C50E25F00B912ED /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
 		11E631481C50E25F00B912ED /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
 		11E6314A1C50E27700B912ED /* MasonyUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasonyUtil.h; sourceTree = "<group>"; };
@@ -421,6 +424,8 @@
 		1110FDF61C50BDC30010C684 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				11544FA81C561BF6001B68DF /* RCDraggableButton.h */,
+				11544FA91C561BF6001B68DF /* RCDraggableButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -868,6 +873,7 @@
 				114F2A961C51F135006363C6 /* SDRefreshHeaderView.m in Sources */,
 				11E631491C50E25F00B912ED /* MBProgressHUD+MJ.m in Sources */,
 				114F2ABC1C5200BB006363C6 /* MJRefreshGifHeader.m in Sources */,
+				11544FAA1C561BF6001B68DF /* RCDraggableButton.m in Sources */,
 				1110FDE21C50BD750010C684 /* CartViewController.m in Sources */,
 				1104A8011C50B55C0035036C /* main.m in Sources */,
 				1110FE5B1C50D8590010C684 /* UserDefaultsUtils.m in Sources */,

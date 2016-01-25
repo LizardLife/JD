@@ -11,20 +11,33 @@
 #import "SDCycleScrollView.h"
 #import "SDRefresh.h"
 #import "MJRefresh.h"
+#import "RCDraggableButton.h"
 //#import "Header.h"
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource,SearchBarViewDelegate,SDCycleScrollViewDelegate>
 @property (nonatomic,strong)UITableView *tableView;
 @property (nonatomic,strong)SDCycleScrollView *scroll;
+@property (nonatomic,strong)UIView *avtaView;
+@property (nonatomic,strong)RCDraggableButton *avatar;
+
+
 
 @end
 
 @implementation HomeViewController
+//- (void)viewWillAppear:(BOOL)animated{
+//    _avtaView = [[UIApplication sharedApplication].keyWindow viewWithTag:100];
+//    _avtaView.hidden = NO;
+//}
+- (void)viewWillDisappear:(BOOL)animated{
+    _avatar.hidden = YES;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self loadTableView];
     [self setNavgationItem];
     [self setupRefresh];
+    [self loadAvatar];
     // Do any additional setup after loading the view.
 }
 - (void)loadTableView{
@@ -46,6 +59,22 @@
     self.navigationItem.titleView = search;
     
 }
+- (void)loadAvatar{
+    RCDraggableButton *avatar = [[RCDraggableButton alloc] initInKeyWindowWithFrame:CGRectMake(0, 300, 60, 60)];
+    [avatar setTag:100];
+    [avatar setBackgroundImage:[UIImage imageNamed:@"loadAvatar"] forState:UIControlStateNormal];
+    avatar.adjustsImageWhenHighlighted = NO;
+    _avatar = avatar;
+    [avatar addTarget:self action:@selector(goMoney) forControlEvents:UIControlEventTouchUpInside];
+    
+}
+- (void)goMoney{
+    UIViewController *vc = [[UIViewController alloc] init];
+    vc.title = @"抢红包";
+    vc.view.backgroundColor = [UIColor orangeColor];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 - (UIView *)scroll{
 
     NSArray *image = @[
